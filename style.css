@@ -3,6 +3,17 @@
 Color 1 = #653AB0 
 Color 2 = #52D8F9
 */
+
+.body-bg
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	min-height: 100%;
+	background:linear-gradient(#653AB0,#52D8F9);
+	z-index: -99999999;
+}
 .container
 {
 	position: absolute;
@@ -10,7 +21,6 @@ Color 2 = #52D8F9
 	left: 0;
 	min-width: 100%;
 	min-height: 100%;
-	background:linear-gradient(#653AB0,#52D8F9);
 }
 .square-container
 {
@@ -217,6 +227,88 @@ Color 2 = #52D8F9
 	color: #fff;
 	transition: all .5s;
 }
+
+.circle-container-mouse
+{
+	z-index: -9999;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	left: 0%;
+	top: 0;
+	transform: translateX(-50%) translateY(-50%);
+	transition: all .1s;
+}
+
+.circle-container-mouse-circle-0
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 45%;
+	height: 45%;
+	transform: translateX(-50%) translateY(-50%);
+	border-radius: 50%;
+	border: thin solid #fff;
+	animation: anim-sq-0 infinite 2s ease;
+	animation-delay: 0s;
+	opacity: 0;
+}
+.circle-container-mouse-circle-1
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 45%;
+	height: 45%;
+	transform: translateX(-50%) translateY(-50%);
+	border-radius: 50%;
+	border: thin solid #fff;
+	animation: anim-sq-0 infinite 2s ease;
+	animation-delay: 1s;
+	opacity: 0;
+}
+.circle-container-mouse-circle-2
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 45%;
+	height: 45%;
+	transform: translateX(-50%) translateY(-50%);
+	border-radius: 50%;
+	border: thin solid #fff;
+	animation: anim-sq-0 infinite 2s ease;
+	animation-delay: 1.5s;
+	opacity: 0;
+}
+.circle-container-mouse-circle-3
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 45%;
+	height: 45%;
+	transform: translateX(-50%) translateY(-50%);
+	border-radius: 50%;
+	border: thin solid #fff;
+	animation: anim-sq-0 infinite 2s ease;
+	animation-delay: 2s;
+	opacity: 0;
+}
+.circle-container-img-0
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 45%;
+	height: 45%;
+	transform: translateX(-50%) translateY(-50%);
+	border-radius: 50%;
+	border: thin solid #fff;
+	opacity: 1;
+}
+
 
 @media only screen and (max-width: 763px) {
   .square-container
