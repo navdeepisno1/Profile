@@ -1,14 +1,31 @@
 <!doctype html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript">
+	
+$(document).ready(function(){
+  $("body").mousemove(function(e) {
+    var px = e.pageX;
+    var py = e.pageY;
+	var m = document.getElementById("body-mouse");
+	  m.style.top = (py)+"px";
+	  m.style.left = (px)+"px";
+})
+});
+</script>
 <meta charset="utf-8">
 <link href="style.css" type="text/css" rel="stylesheet">
 <title>Navdeep Sharma - Profile</title>
 </head>
-
-
-<body>
+<body onload="mouse_position()">
+	<div class="body-bg"></div>
+	<div class="circle-container-mouse" id="body-mouse">
+			<div class="circle-container-mouse-circle-0"></div>
+			<div class="circle-container-mouse-circle-1"></div>
+			<div class="circle-container-mouse-circle-2"></div>
+			<div class="circle-container-mouse-circle-3"></div>
+	</div>
 	<div class="container">
 		<div class="square-container">
 			<div class="square-container-sq-0"></div>
