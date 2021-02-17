@@ -16,54 +16,7 @@
             <img src="images/icon_rotate_device.gif" style="width: 100px" />
         </center>
     </div>
-    <div class="menu" id="profile-menu">
-        <div class="menu-bg"></div>
-        <div class="menu-items">
-            <a href="#profile" onclick="changeNavbarButton()">
-                <div>Profile</div>
-            </a><br />
-            <a href="#about" onclick="changeNavbarButton()">
-                <div>About</div>
-            </a><br />
-            <a href="#projects" onclick="changeNavbarButton()">
-                <div>Projects</div>
-            </a><br />
-            <a href="#developers" onclick="changeNavbarButton()">
-                <div>Developers</div>
-            </a><br />
-            <a href="#contact" onclick="changeNavbarButton()">
-                <div>Contact</div>
-            </a><br />
-        </div>
-    </div>
-
-    <div class="navbar">
-        <div class="navbar-bg"></div>
-        <div class="navbar-btn-container" id="navbar-btn" onClick="changeNavbarButton()">
-            <div class="navbar-btn-0" id="navbar-btn-l0"></div>
-            <div class="navbar-btn-1" id="navbar-btn-l1"></div>
-            <div class="navbar-btn-2" id="navbar-btn-l2"></div>
-        </div>
-    </div>
-    <script>
-        var isbuttonOff = 0;
-
-        function changeNavbarButton() {
-            if (isbuttonOff == 0) {
-                document.getElementById("navbar-btn-l0").style.width = "50%";
-                document.getElementById("navbar-btn-l1").style.width = "80%";
-                document.getElementById("navbar-btn-l2").style.width = "50%";
-                document.getElementById("profile-menu").style.top = "0";
-                isbuttonOff = 1;
-            } else {
-                document.getElementById("navbar-btn-l0").style.width = "80%";
-                document.getElementById("navbar-btn-l1").style.width = "50%";
-                document.getElementById("navbar-btn-l2").style.width = "80%";
-                document.getElementById("profile-menu").style.top = "-100%";
-                isbuttonOff = 0;
-            }
-        }
-    </script>
+   
     <div class="body-bg"></div>
     <div class="container-profile" id="profile">
         <div class="square-container">
@@ -85,64 +38,6 @@
             <a href="tel:7015798026"><img src="images/icon_dialer.png" class="circle-container-img-0" alt="Dialer Icon" /></a>
         </div>
     </div>
-
-    <div class="container-about" id="about">
-        <div class="about-grid">
-            <div class="about-img">
-                <img src="images/navi_bg.png" alt="Navdeep Sharma Profile Image" class="about-img-item" />
-            </div>
-            <div class="ferry-wheel">
-                <div class="ferry-wheel-item1">
-                    Android Developer
-                </div>
-                <div class="ferry-wheel-support">
-
-                </div>
-                <div class="ferry-wheel-item2">
-                    Web Developer
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-projects" id="projects">
-        <div class="project-grid">
-            <div class="project-card">
-                <div class="project-card-item">
-                    <div class="project-card-item-img">
-                        <img src="images/icon_gmail.png" class="project-card-item-img-item" />
-                    </div>
-                    <div class="project-card-item-data">1</div>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-card-item">
-                    <div class="project-card-item-img">
-                        <img src="images/icon_fb.png" class="project-card-item-img-item" />
-                    </div>
-                    <div class="project-card-item-data">2</div>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-card-item">
-                    <div class="project-card-item-img">
-                        <img src="images/icon_linkedin.png" class="project-card-item-img-item" />
-                    </div>
-                    <div class="project-card-item-data">3</div>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-card-item">
-                    <div class="project-card-item-img">
-                        <img src="images/icon_github.png" class="project-card-item-img-item" />
-                    </div>
-                    <div class="project-card-item-data">4</div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-developers" id="developers"></div>
 
     <div class="container-social">
         <a href="https://www.facebook.com/profile.php?id=100022623902901">
